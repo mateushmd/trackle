@@ -237,7 +237,7 @@ $(() =>
 		const userContainer = $('<div>', { class: 'user' });
 		if (picturePath)
 		{
-			userContainer.append($('<img>', { class: 'discussion-user-image', src: `http://localhost:3001/uploads/${picturePath}` }));
+			userContainer.append($('<img>', { class: 'discussion-user-image', src: `${window.location.origin}:3001/uploads/${picturePath}` }));
 		}
 		else
 			userContainer.append($('<i>', { class: 'fa-solid fa-user' }));

@@ -1,4 +1,4 @@
-const serverUrl = 'http://localhost:3001/upload';
+const serverUrl = `${window.location.origin}:3001/upload`;
 
 function uploadImage(userId, formData, callbackFunction)
 {
