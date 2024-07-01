@@ -1,4 +1,4 @@
-const serverUrl = 'http://localhost:3001/upload';
+const serverUrl = 'https://trackle.onrender.com/upload';
 
 function uploadImage(userId, formData, callbackFunction)
 {

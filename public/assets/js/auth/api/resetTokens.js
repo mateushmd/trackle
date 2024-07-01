@@ -1,10 +1,12 @@
 import { getUser } from "./users.js";
 
+const serverUrl = 'https://trackle.onrender.com';
+
 const apiUrl = '/resetTokens';
 
 function generateToken(userId, callbackFunction)
 {
-    fetch('http://localhost:3001/generateToken')
+    fetch(`${serverUrl}/generateToken`)
         .then(response => response.json())
         .then(token =>
         {
@@ -137,7 +139,7 @@ async function sendToEmail(email, token)
 {
     try
     {
-        const response = await fetch('http://localhost:3001/sendEmail', {
+        const response = await fetch(`${serverUrl}/sendEmail`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

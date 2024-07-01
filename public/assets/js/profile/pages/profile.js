@@ -44,7 +44,7 @@ $(() =>
 
         if (user.picturePath !== null)
         {
-            $('#img-perfil').prop('src', `http://localhost:3001/uploads/${user.picturePath}`);
+            $('#img-perfil').prop('src', `https://trackle.onrender.com/uploads/${user.picturePath}`);
         }
 
         $('#nivel-perfil').text(user.level);
@@ -131,7 +131,7 @@ $(() =>
 
                 updateUser(userId, { picturePath: picturePath }, () =>
                 {
-                    $('#img-perfil').prop('src', `http://localhost:3001/uploads/${picturePath}`);
+                    $('#img-perfil').prop('src', `https://trackle.onrender.com/uploads/${picturePath}`);
                 });
             });
         });

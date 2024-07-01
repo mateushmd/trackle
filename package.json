@@ -4,7 +4,7 @@
   "description": "Projeto TI1",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"json-server --watch ./db/db.json -s ./public\" \"node server.js\""
+    "start": "json-server --watch ./db/db.json -s ./public"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +15,6 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "json-server": "^1.0.0-beta.0",
-    "multer": "^1.4.5-lts.1",
-    "nodemailer": "^6.9.14"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.2"
+    "json-server": "^1.0.0-beta.0"
   }
 }

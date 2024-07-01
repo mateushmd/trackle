@@ -2,7 +2,7 @@ import { generateUniqueId } from "../../util.js";
 
 const apiUrl = '/users';
 
-const serverUrl = 'http://localhost:3001';
+const serverUrl = 'https://trackle.onrender.com';
 
 function register(user, callbackFunction, errorFunction) 
 {

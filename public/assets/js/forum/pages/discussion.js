@@ -108,7 +108,7 @@ $(() =>
         if (discussion.picturePath)
         {
             userIcon.remove();
-            $('#user').prepend($('<img>', { src: `http://localhost:3001/uploads/${discussion.picturePath}` }));
+            $('#user').prepend($('<img>', { src: `https://trackle.onrender.com/uploads/${discussion.picturePath}` }));
         }
 
         userElement.text(discussion.authorId === userId ? 'Você' : discussion.authorName);
@@ -213,7 +213,7 @@ $(() =>
     {
         const commentHeader = $('<div>', { class: 'comment-user' });
         if (userPicture)
-            commentHeader.append($('<img>', { src: `http://localhost:3001/uploads/${userPicture}` }));
+            commentHeader.append($('<img>', { src: `https://trackle.onrender.com/uploads/${userPicture}` }));
         else
             commentHeader.append($('<i>', { class: 'fa-solid fa-user' }));
 
