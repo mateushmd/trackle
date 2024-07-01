@@ -149,7 +149,7 @@ async function sendToEmail(email, token)
                 subject: 'Redefinição de senha',
                 html: `<p>Você recebeu este email pois você (ou outra pessoa) enviou uma requisição para redefinir a senha de sua conta.<br></br>
                             Utilize o link a seguir para dar sequênicia à redefinição:<br><br>
-                            http://localhost:3000/redefinir-senha.html?t=${token} <br><br>
+                            ${window.location.origin}/redefinir-senha.html?t=${token} <br><br>
                             Se você não enviou a requisição, ignore este email e sua senha permanecerá inalterada.</p>`
             })
         });
